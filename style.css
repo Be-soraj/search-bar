@@ -49,4 +49,5 @@ body{
     border-bottom: 2px solid black;
     border-radius: 0;
     background-position: 100% center;
+    background-image: none;
 }
