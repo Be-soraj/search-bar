@@ -1,32 +1,37 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
  *{
+    top: 0;
+    left: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:  'Poppins', sans-serif;
  }
 body{
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     background-color: rgba(184, 192, 224, 0.986);
 }
 .search{
     display: flex;
     color: #ffffff;
-    width: 350px;
-    height: 35px;
+    width: 550px;
+    height: 45px;
+    position: relative;
     text-align: center;
     background-color: transparent;
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWUlEQVR4nO2XO08UURTHRxI31gqJa6mUhkeA7yB+B1+NCZEYIl+BxGql00oLEiPrB/BVwKKtjTQU2vpItNCCRBH4mRPOdU4uswbYMzuMuf9mspuZ//+ce88zyxISEhJqC+AMcA14CrwFPgK/9Cm/28BVeS87TgCG1bhtDobfwLJ8V7XhDeAesMXRIN+1hKcK44eA15FBO8AKMAdMAE11sqm/5f9Vfc9iDRjst/EfIiOeASMH/H4UeBF9/74vTgAn9RRtPN8+ItfNKPzelB5OGvM2hqd75JvWQwho+Vm7X+y8lsWAGSfe2ehQhj14i4TaNuaduV8a7mVPbtukwlVLFRl35h8x1WnbPaGB6+aEVlzJc401o3GlzPCZcyXPNe4YjbY3ucwyAROu5LnGlNHY8Cb/ZMjPupLnGueMxg9vcls+S2k27I0df8upN7mMxAFNV/LiG/hSZg5MupIX58C7OlaheaPx2JtcNqmAVVfyXKNjNG6U3YlHnfllX9gNCVxKnukaGPDcmfuV4V7y5I53Xzu/33LilU0tQG75ogdvN7FWJHa5R75L0T6w4Gdt92Zjhy4Rn+3h5K3xX4FT/lYX78Syw1rIPD92iIS1MW/xEBjohxOD0U2E6tTRqXJKO2tDn5Na5zum2gR8q8qJhuaEnZMOAwmfBQkbNbr/TqgjF4AnUTz/C1LJlmy1EWOp0gk14rRsUtovNoDvGlafgXUZD6TDdmtSHAcnegVwArgfOfGojk48SE5UDf6TmxgoSOzFrE5gvxObWd3AnhOLwE/gbtX2JCQkJGSF+AOVxs2tuHo8/gAAAABJRU5ErkJggg==");
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position:95% center;
-    border-radius: 20px;
+    border-radius: 40px;
     border: 2px solid black;
     transition:transform 250ms ease-in-out;
-    font-size: 14px;
+    font-size: 1.4em;
     transition: all 250ms ease-in-out;
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -39,15 +44,36 @@ body{
     text-transform: uppercase;
     letter-spacing: 1.5px;
     text-align: center;
-    top: 3px;
+    top: 0px;
     opacity: calc(80%);
 }
 .search:hover,
 .search:focus{
+
     outline: none;
     border:1px solid transparent;
     border-bottom: 2px solid black;
     border-radius: 0;
     background-position: 100% center;
     background-image: none;
+}
+.icon{
+    top: -33.5px;
+    left: 502.5px;
+    width: 20px;
+    display: none;
+    position: relative;
+ } 
+.logo{
+    width: 200px;
+    top: -100px;
+    left:23em;
+    position: relative;
+}
+.icon:hover{
+    display: block;
+}
+.search-icon{
+    margin: 10px;
+    display: none;
 }
