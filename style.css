@@ -8,8 +8,6 @@
     font-family:  'Poppins', sans-serif;
  }
 body{
-    top: 0;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,10 +15,11 @@ body{
     background-color: rgba(184, 192, 224, 0.986);
 }
 .search{
-    display: flex;
-    color: #ffffff;
+    left: -20px;
     width: 550px;
     height: 45px;
+    display: flex;
+    color: #ffffff;
     position: relative;
     text-align: center;
     background-color: transparent;
@@ -67,7 +66,7 @@ body{
 .logo{
     width: 200px;
     top: -100px;
-    left:23em;
+    left:22em;
     position: relative;
 }
 .icon:hover{
